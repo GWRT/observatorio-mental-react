@@ -12,7 +12,7 @@ console.log(mentalNewsRouter)
 
 const app = express();
 
-dotenv.config({ path: '/etc/secrets/.env' });
+dotenv.config();
 
 const dbMinsaConnection = dbConnect();
 const mentalNewsConnection = dbConnectMentalNews();
