@@ -5,7 +5,7 @@ export default function atendidosProvider () {
 
     const [mentalNews, setMentalNews] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:4000/api/getMentalNews')
+        axios.get('https://observatorio-mental.onrender.com/api/getMentalNews')
         .then(treated => setMentalNews(treated.data))
         .catch(err => console.error(err))
     },[])

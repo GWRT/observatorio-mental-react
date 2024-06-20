@@ -5,7 +5,7 @@ export default function atendidosProvider () {
 
     const [treated, setTreated] = useState([])
     useEffect(() => {
-        axios.get('http://localhost:4000/api/getTreatedForDiagnosis')
+        axios.get('https://observatorio-mental.onrender.com/api/getTreatedForDiagnosis')
         .then(treated => setTreated(treated.data))
         .catch(err => console.error(err))
     },[])
