@@ -2,6 +2,7 @@ import React from 'react'
 import mentalNewsProvider from '../../apiProvider/mentalNewsProvider';
 
 import NewsCard from './NewsCard';
+import Clarification from '../Clarification';
 
 export default function Noticias() {
 
@@ -10,6 +11,7 @@ export default function Noticias() {
 
   return (
     <>
+      <Clarification />
       <div className='bg-main-color text-center p-4 text-3xl'>
         <header className='text-white'>Noticias</header>
       </div>

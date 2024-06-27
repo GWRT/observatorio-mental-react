@@ -3,6 +3,7 @@ import atendidosDepartmentProvider from '../../apiProvider/atendidosDepartmentPr
 import atendidosProvider from '../../apiProvider/atendidosProvider';
 import { PieChart } from '@mui/x-charts/PieChart'
 import PeruMapSVG from '../../svg/PeruMapSVG';
+import Clarification from '../Clarification';
 
 export default function Graficas() {
 
@@ -35,6 +36,7 @@ export default function Graficas() {
 
     return (
         <>
+            <Clarification />
             <div className='bg-main-color text-center p-4 text-3xl'>
                 <header className='text-white'>Mapa de calor de casos Atendidos en el Perú</header>
             </div>
